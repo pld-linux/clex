@@ -1,5 +1,5 @@
 Summary:	A file mananger
-Summary(pl):	Mened¿er plików
+Summary(pl):	Zarz±dca plików
 Name:		clex
 Version:	3.1.6
 Release:	1
@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 CLEX is an interactive full-screen file manager.
 
 %description -l pl
-CLEX jest interaktywnym, pe³noekranowym mened¿erem plików.
+CLEX jest interaktywnym, pe³noekranowym zarz±dc± plików.
 
 %prep
 %setup  -q
