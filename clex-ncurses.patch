@@ -1,0 +1,49 @@
+--- clex-3.1.5/src/control.c~	2002-05-19 18:02:57.000000000 +0200
++++ clex-3.1.5/src/control.c	2002-06-09 22:02:38.000000000 +0200
+@@ -17,11 +17,15 @@
+ 
+ #include <sys/types.h>		/* clex.h */
+ #include <ctype.h>			/* iscntrl() */
++#ifdef HAVE_NCURSES_NCURSES_H
++# include <ncurses/curses.h>
++#else
+ #ifdef HAVE_NCURSES_H
+ # include <ncurses.h>		/* KEY_xxx */
+ #else
+ # include <curses.h>
+ #endif
++#endif
+ 
+ #include "clex.h"
+ #include "control.h"
+--- clex-3.1.5/src/inout.c~	2002-05-29 10:38:04.000000000 +0200
++++ clex-3.1.5/src/inout.c	2002-06-09 22:03:11.000000000 +0200
+@@ -19,12 +19,17 @@
+ #include <ctype.h>			/* iscntrl() */
+ #include <stdarg.h>			/* va_list */
+ #include <string.h>			/* strcpy() */
++#ifdef HAVE_NCURSES_NCURSES_H
++# include <ncurses/curses.h>
++# include <ncurses/term.h>
++#else
+ #ifdef HAVE_NCURSES_H
+ # include <ncurses.h>		/* initscr() */
+ #else
+ # include <curses.h>
+ #endif
+ #include <term.h>			/* enter_bold_mode */
++#endif
+ 
+ #include "clex.h"
+ #include "inout.h"
+--- clex-3.1.5/configure.in~	2002-05-16 22:04:59.000000000 +0200
++++ clex-3.1.5/configure.in	2002-06-09 22:01:55.000000000 +0200
+@@ -11,7 +11,7 @@
+ AC_HEADER_MAJOR
+ AC_HEADER_SYS_WAIT
+ AC_HEADER_TIME
+-AC_CHECK_HEADERS(ncurses.h fcntl.h unistd.h)
++AC_CHECK_HEADERS(ncurses.h ncurses/ncurses.h fcntl.h unistd.h)
+ AC_DECL_SYS_SIGLIST
+ AC_C_CONST
+ AC_TYPE_UID_T
