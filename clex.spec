@@ -4,12 +4,12 @@ Name:		clex
 Version:	3.1.2
 Release:	1
 License:	GPL
-Group:		Console/Utilitiles
+Group:		Applications/Console
 Source0:	http://www.clex.sk/download/%{name}-%{version}.tar.gz
-URL:		http://www.clex.sk
-BuildRequires:	ncurses-devel
+URL:		http://www.clex.sk/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
