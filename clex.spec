@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://www.clex.sk/download/%{name}-%{version}.tar.gz
-URL:		http://www.clex.sk/
+URL:		http://www.clex.sk
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel
@@ -24,7 +24,7 @@ CLEX jest interaktywnym, pe³noekranowym mened¿erem plików.
 %build
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 CPPFLAGS="-I/usr/include/ncurses"; export CPPFLAGS
 %configure
 %{__make}
