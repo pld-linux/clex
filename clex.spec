@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://www.clex.sk/download/%{name}-%{version}.src.tar.gz
+# Source0-md5:	05c074491db8cbb407221e7471e84bb3
 Patch0:		%{name}-ncurses.patch
 URL:		http://www.clex.sk/
 BuildRequires:	autoconf
