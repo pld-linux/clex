@@ -1,11 +1,11 @@
 Summary:	A file mananger
 Summary(pl):	Mened¿er plików
 Name:		clex
-Version:	3.1.2
+Version:	3.1.3
 Release:	1
 License:	GPL
 Group:		Applications/Console
-Source0:	http://www.clex.sk/download/%{name}-%{version}.tar.gz
+Source0:	http://www.clex.sk/download/%{name}-%{version}.src.tar.gz
 URL:		http://www.clex.sk/
 BuildRequires:	autoconf
 BuildRequires:	automake
