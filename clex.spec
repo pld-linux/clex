@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://www.clex.sk/download/%{name}-%{version}.tar.gz
-URL:		http://www.clex.sk
+URL:		http://www.clex.sk/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel
