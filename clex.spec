@@ -28,6 +28,7 @@ mv -f autoconf.h.bot config.h.bot
 %build
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
