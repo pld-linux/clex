@@ -4,7 +4,7 @@ Name:		clex
 Version:	3.1.6
 Release:	1
 License:	GPL
-Group:		Applications/Console
+Group:		Applications/Terminal
 Source0:	http://www.clex.sk/download/%{name}-%{version}.src.tar.gz
 Patch0:		%{name}-ncurses.patch
 URL:		http://www.clex.sk/
