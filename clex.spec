@@ -1,7 +1,7 @@
 Summary:	A file mananger
 Summary(pl):	Mened¿er plików
 Name:		clex
-Version:	3.1.0
+Version:	3.1.2
 Release:	1
 License:	GPL
 Group:		Console/Utilitiles
