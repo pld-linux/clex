@@ -1,11 +1,12 @@
 Summary:	A file mananger
 Summary(pl):	Mened¿er plików
 Name:		clex
-Version:	3.1.4
+Version:	3.1.5
 Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://www.clex.sk/download/%{name}-%{version}.src.tar.gz
+Patch0:		%{name}-ncurses.patch
 URL:		http://www.clex.sk/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -20,12 +21,13 @@ CLEX jest interaktywnym, pe³noekranowym mened¿erem plików.
 
 %prep
 %setup  -q
+%patch0 -p1
 
 %build
-aclocal
+mv -f autoconf.h.bot config.h.bot
+%{__aclocal}
 %{__autoconf}
 %{__automake}
-CPPFLAGS="-I/usr/include/ncurses"; export CPPFLAGS
 %configure
 %{__make}
 
@@ -43,5 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/clex
 %{_mandir}/man*/*
