@@ -23,9 +23,9 @@ CLEX jest interaktywnym, pe³noekranowym zarz±dc± plików.
 %prep
 %setup  -q
 %patch0 -p1
+mv -f autoconf.h.bot config.h.bot
 
 %build
-mv -f autoconf.h.bot config.h.bot
 %{__aclocal}
 %{__autoconf}
 %{__automake}
@@ -35,7 +35,8 @@ mv -f autoconf.h.bot config.h.bot
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
