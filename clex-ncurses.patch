@@ -25,14 +25,14 @@
  # include <ncurses.h>	/* initscr() */
  #else
  # include <curses.h>
---- clex-3.1.8/configure.in.orig	2003-02-24 11:28:12.000000000 +0100
-+++ clex-3.1.8/configure.in	2004-03-28 18:37:06.524296200 +0200
-@@ -14,7 +14,7 @@
+--- clex-3.1.9/configure.in.orig	2004-04-05 19:42:34.000000000 +0000
++++ clex-3.1.9/configure.in	2004-08-21 18:15:50.417702432 +0000
+@@ -19,7 +19,7 @@
  AC_HEADER_MAJOR
  AC_HEADER_SYS_WAIT
  AC_HEADER_TIME
--AC_CHECK_HEADERS(ncurses.h fcntl.h unistd.h term.h ncurses/term.h)
-+AC_CHECK_HEADERS(ncurses.h ncurses/ncurses.h fcntl.h unistd.h term.h ncurses/term.h)
- AC_DECL_SYS_SIGLIST
- AC_C_CONST
- AC_TYPE_UID_T
+-AC_CHECK_HEADERS([locale.h ncurses.h sys/time.h term.h ncurses/term.h])
++AC_CHECK_HEADERS([locale.h ncurses/ncurses.h sys/time.h term.h ncurses/term.h])
+ 
+ # Checks for typedefs, structures, and compiler characteristics.
+ AC_HEADER_STAT
