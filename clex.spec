@@ -23,8 +23,8 @@ CLEX jest interaktywnym, pe³noekranowym mened¿erem plików.
 
 %build
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 CPPFLAGS="-I/usr/include/ncurses"; export CPPFLAGS
 %configure
 %{__make}
