@@ -1,12 +1,12 @@
 Summary:	A file mananger
 Summary(pl):	Zarz±dca plików
 Name:		clex
-Version:	3.1.8
+Version:	3.1.9
 Release:	1
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://www.clex.sk/download/%{name}-%{version}.src.tar.gz
-# Source0-md5:	a4c9f7d169f4fadb40ed7582ee2dd2f3
+# Source0-md5:	33efce1122f01945b0e09bb7d8791282
 Patch0:		%{name}-ncurses.patch
 URL:		http://www.clex.sk/
 BuildRequires:	autoconf
@@ -23,7 +23,7 @@ CLEX jest interaktywnym, pe³noekranowym zarz±dc± plików.
 %prep
 %setup  -q
 %patch0 -p1
-mv -f autoconf.h.bot config.h.bot
+#mv -f autoconf.h.bot config.h.bot
 
 %build
 %{__aclocal}
