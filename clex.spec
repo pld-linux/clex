@@ -1,12 +1,12 @@
 Summary:	A file mananger
 Summary(pl):	Zarz±dca plików
 Name:		clex
-Version:	3.12
+Version:	3.13
 Release:	1
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://www.clex.sk/download/%{name}-%{version}.tar.gz
-# Source0-md5:	7fd178c794bc2f14a4cad36ea4dd51f4
+# Source0-md5:	12e3840e3af83a65453b195463842da9
 Patch0:		%{name}-ncurses.patch
 URL:		http://www.clex.sk/
 BuildRequires:	autoconf
@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man*/*
