@@ -1,5 +1,5 @@
 Summary:	A file mananger
-Summary(pl.UTF-8):   Zarządca plików
+Summary(pl.UTF-8):	Zarządca plików
 Name:		clex
 Version:	3.14
 Release:	1
