@@ -1,12 +1,12 @@
 Summary:	A file mananger
 Summary(pl.UTF-8):	Zarządca plików
 Name:		clex
-Version:	3.14
+Version:	3.16
 Release:	1
 License:	GPL v2
 Group:		Applications/Terminal
 Source0:	http://www.clex.sk/download/%{name}-%{version}.tar.gz
-# Source0-md5:	8ed86b6e50266a3b2c7419e369e3ec03
+# Source0-md5:	52d3396fd3ce07441bb0da8e7690b2b3
 Patch0:		%{name}-ncurses.patch
 URL:		http://www.clex.sk/about.html
 BuildRequires:	autoconf
